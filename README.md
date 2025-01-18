@@ -1,3 +1,6 @@
+# Mô tả sơ lược về dự án:
+ Dự án mô phỏng trang web threads với các tính năng cơ bản của một mạng xã hội.
+ 
 # Cấu hình dự án:
 ## Frontend:
   **NodeJS:**
