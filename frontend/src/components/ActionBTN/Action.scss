@@ -1,0 +1,32 @@
+.action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  svg {
+    fill: var(--fill);
+    height: var(--height);
+    width: var(--width);
+    stroke-width: 2;
+    stroke: currentColor;
+    padding-right: 4px;
+    transform: scale(1.2);
+  }
+
+  .box {
+    color: var(--dark-overlay);
+    display: flex;
+    position: relative;
+    padding: 0 5px;
+
+    .click {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}

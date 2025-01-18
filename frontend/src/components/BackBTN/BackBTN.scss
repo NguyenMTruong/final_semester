@@ -1,0 +1,14 @@
+.back-btn {
+  margin-left: 24px;
+
+  .container {
+    border: 1px solid var(--dark-color);
+    border-radius: 50%;
+    width: 20px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}

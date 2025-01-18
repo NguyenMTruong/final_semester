@@ -1,0 +1,33 @@
+.media {
+  .box {
+    display: inline-block;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  &.i2 {
+    display: flex;
+    gap: 6px;
+    overflow: hidden;
+
+    img {
+      height: 360px;
+      width: auto;
+    }
+  }
+
+  &.is .container {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    img {
+      height: 240px;
+      width: auto;
+    }
+  }
+}

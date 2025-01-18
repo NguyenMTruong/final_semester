@@ -1,0 +1,22 @@
+.box.back.icon {
+  padding: 12px;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 0.8px solid var(--dark-overlay);
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}

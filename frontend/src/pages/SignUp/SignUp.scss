@@ -1,0 +1,138 @@
+.form-signup {
+  width: 400px;
+  position: absolute;
+  top: 210px;
+  left: 37%;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__attr {
+    position: relative;
+
+    p {
+      position: absolute;
+      font-size: 12px;
+      color: rgb(214, 13, 13);
+      top: 0;
+      left: 8px;
+      transform: translateY(-20%);
+      display: none;
+    }
+
+    input.wrong {
+      outline: 0.8px solid rgb(214, 13, 13);
+    }
+
+    &.blank {
+      p.text-blank {
+        display: block;
+      }
+    }
+  }
+
+  &__fullName {
+    input {
+      border: none;
+      background: #f5f5f5;
+      padding: 20px 0;
+      padding-left: 20px;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  &__userName {
+    input {
+      border: none;
+      background: #f5f5f5;
+      padding: 20px 0;
+      padding-left: 20px;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__email {
+    input {
+      border: none;
+      background: #f5f5f5;
+      padding: 20px 0;
+      padding-left: 20px;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .email-init {
+      position: relative;
+      font-size: 13.5px;
+    }
+  }
+
+  &__password {
+    input {
+      border: none;
+      background: #f5f5f5;
+      padding: 20px 0;
+      padding-left: 20px;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .pass-init {
+      position: relative;
+      font-size: 13.5px;
+    }
+  }
+
+  &__submit {
+    width: 420px;
+    text-align: center;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background: black;
+    color: #646464;
+    font-weight: 700;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 100ms;
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  &__login {
+    width: 420px;
+    text-align: center;
+    p {
+      color: #646464;
+    }
+    button {
+      border: none;
+      width: 100px;
+      padding: 15px 10px;
+      border-radius: 10px;
+      background: black;
+      color: #646464;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      transform: scale(1);
+      transition: all 0.5s;
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}

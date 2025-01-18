@@ -1,0 +1,211 @@
+.layout-default {
+  width: 99.9dvw;
+  height: 99.9dvh;
+  position: relative;
+
+  .nav {
+    width: 72px;
+    height: 100%;
+    overflow: visible;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+
+    // flex property
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: max-content 1fr max-content;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: var(--dark-overlay);
+      height: 100%;
+    }
+
+    .top {
+      box-sizing: content-box;
+      height: 34px;
+      padding: 15px 0;
+
+      .top-box {
+        justify-content: center;
+        height: 100%;
+      }
+    }
+
+    .mid {
+      flex-grow: 1;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+
+      &-box {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        color: var(--dark-overlay);
+
+        &.active {
+          color: rgb(0, 0, 0);
+
+          svg {
+            fill: currentColor;
+            color: currentColor;
+          }
+        }
+
+        & {
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          svg {
+            stroke: currentColor;
+            fill: transparent;
+            stroke-width: 2;
+            height: 24px;
+            width: 24px;
+          }
+
+          .link {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            height: calc(100% - 12px);
+            margin: 6px 0;
+            z-index: 0;
+            opacity: 0;
+            border-radius: 6px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .end {
+      width: 54px;
+      padding-bottom: 30px;
+
+      .end-box {
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 100;
+        color: var(--dark-overlay);
+        position: relative;
+        cursor: pointer;
+        margin-top: 12px;
+
+        i {
+          font-size: 24px;
+        }
+
+        div {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          padding: 12px 0;
+        }
+
+        &.active {
+          color: var(--dark-color);
+        }
+      }
+    }
+  }
+
+  & > .container {
+    width: 100%;
+    height: 99dvh;
+    display: flex;
+    justify-content: center;
+
+    & > .content {
+      width: 630px;
+      height: 100%;
+      overflow: visible;
+
+      & > * > .head {
+        height: 60px;
+        display: grid;
+        grid-template-columns: 94px 1fr 94px;
+
+        & > * {
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+
+        .left {
+          width: 94px;
+          padding-left: 8px;
+          box-sizing: border-box;
+        }
+
+        .midd {
+          justify-content: center;
+          font-weight: 500;
+          font-size: 16px;
+        }
+
+        .right {
+          width: 94px;
+          padding-right: 8px;
+          box-sizing: border-box;
+        }
+      }
+
+      & > * > .container {
+        height: calc(99dvh - 60px);
+        border: 0.8px solid #ccc;
+        border-radius: 20px;
+        overflow: hidden;
+
+        & > .scroll {
+          padding-top: 10px;
+          height: 100%;
+          overflow-y: scroll;
+          overflow-y: scroll; /* Cho phép cuộn dọc */
+          scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+          -ms-overflow-style: none; /* Ẩn thanh cuộn trên IE/Edge */
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .cr-btn__post {
+    width: 84px;
+    height: 64px;
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    border-radius: 10px;
+    color: rgba(24, 24, 24, 1);
+    border: 0.8px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    svg {
+      stroke: currentColor;
+      fill: transparent;
+      stroke-width: 2;
+      height: 24px;
+      width: 24px;
+    }
+  }
+}

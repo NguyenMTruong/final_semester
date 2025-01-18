@@ -1,0 +1,82 @@
+.profile {
+  input {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 17px;
+    border-bottom: 0.8px solid var(--dark-overlay);
+  }
+  .change-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: var(--dark-overlay);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    & > .box {
+      width: 615px;
+      min-height: 100px;
+      max-height: 85%;
+      overflow-x: auto;
+      background-color: var(--white-color);
+      border-radius: 16px;
+      padding: 12px 24px;
+
+      .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .name {
+          flex-grow: 1;
+          &-full {
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+        }
+
+        .avatar {
+          padding: 12px;
+          box-sizing: content-box;
+          width: 56px;
+          height: 56px;
+          cursor: pointer;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .title {
+        margin-top: 10px;
+      }
+
+      .btn {
+        padding: 12px;
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        background-color: var(--dark-color);
+        color: var(--white-color);
+        font-weight: 500;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: all 0.15s;
+        transform-origin: center;
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+}

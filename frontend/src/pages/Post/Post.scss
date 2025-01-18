@@ -1,0 +1,62 @@
+.post {
+  & .scroll > .box {
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .right {
+      color: var(--dark-overlay);
+      transition: all 0.15s;
+      position: relative;
+      &:hover {
+        .submenu {
+          width: 150px;
+          height: auto;
+          border: 0.8px solid var(--dark-color);
+        }
+      }
+
+      .submenu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        background-color: var(--white-color);
+        transition: all 0.15s;
+        transform-origin: right top;
+
+        &:hover {
+          width: 150px;
+          height: auto;
+          border: 0.8px solid var(--dark-color);
+        }
+
+        .div {
+          color: var(--dark-color);
+          padding: 3px 12px 0 6px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &:not(:last-child) {
+            border-bottom: 0.8px solid var(--dark-color);
+          }
+        }
+      }
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
