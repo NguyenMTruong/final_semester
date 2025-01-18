@@ -7,7 +7,9 @@
     + version: v23.5.0
     
   **React:** 
+  
     + Sử dụng công cụ Vite
+    
     + Các dependecy: react-redux, @reduxjs/toolkit, react-router-dom, axios, redux, sass
 
   **Cấu trúc folder:**
@@ -59,11 +61,17 @@
     ```
     
 ## Backend:
+
   **jdk:**
-    version: 17
+  
+    + version: 17
+    
   **Spring Boot:**
+  
     + version: 3.4.1
+    
     + Các dependency: lombok, spring-security, starter-data-mongo, jwt,...
+    
   **Cấu trúc folder:**
   
     ```
@@ -118,29 +126,44 @@
 Sau đó mở dự án
 
 **Bước 2:** Chạy server backend
+
   + Vào IDE mở terminal(hoặc PowerShell, CommandPromt,...)
+    
   + Di chuyển vào thư mục ``add``
+    
   + Kiểm tra lỗi và tải phụ thuộc
   
     ```mvn clean install```
+    
   + Chạy dự án
 
     ```mvn spring-boot:run```
 
 **Bước 3:** Chạy UI fronend
+
   + Mở terminal(hoặc PowerShell, CommandPromt,...)
+    
   + Di chuyển vào thư mục `frontend`
+    
   + Tải các thư viện ``npm install``
+    
   + Khởi chạy dự án ``npm run dev``
 
 **Bước 4:** Vào ``localhost:5173`` để xem dự án
 
 # Hướng phát triển tiếp theo
+
 + Thêm chuyển đổi giao diện sáng và tối
+  
 + Cải thiện thêm phần loading của các trang khi đang chờ lấy data khi gửi yêu cầu lên backend
+  
 + Cải thiện các hiệu ứng sau khi thực hiện các hành động (ví dụ: render lại các component cha khi component con thay đổi)
+  
 + Thêm các tính năng như chỉnh sửa bài viết, bình luận
+  
 + Tinh gọn các component(ví dụ: Chuyển PortCard và CommentCard vào thành một component, Chuyển trang Profile và User thành một trang duy nhất,...)
+  
 + Thêm tính năng chat realtime cho dự án
+  
 + Chỉnh sửa tính năng thêm bình luận
-    
+  
